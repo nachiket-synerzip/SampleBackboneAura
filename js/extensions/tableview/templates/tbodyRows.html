@@ -1,0 +1,15 @@
+<% _.each(models, function(record){ %>
+	<tr>
+		<td class="grantee"><a href="/#search-lease/details/<%=record.id%>"><%=record.attributes.grantee%></a></td>
+		<td><%=record.attributes.grantor%></td>
+		<td><%=record.attributes.volume%></td>
+		<td><%=record.attributes.instru_type%></td>
+		<td><%=record.attributes.inst_date%></td>
+		<td><%=record.attributes.county%></td>
+		<td><%=record.attributes.term%></td>
+		<td><%=record.attributes.royalty%></td>
+		<td><%=record.attributes.rec_date%></td>
+		<td><%=record.attributes.area%></td>
+		<td><a href="/#<%=record.attributes.link%>">Runsheet</a></td>
+	</tr>
+<% }); %>
