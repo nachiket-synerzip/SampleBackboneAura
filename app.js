@@ -63,11 +63,11 @@ require(['core', 'sandbox', 'backbone', 'router', 'jquery', 'jquery_ui'], functi
     sandbox.router = appRouter;
 
     core.start([
-        /*{
+        {
             channel: 'button-widget',
             element: '#button-widget'
         },
-        {
+        /*{
             channel: 'text-widget',
             element: '#text-widget'
         },*/

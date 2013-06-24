@@ -1,6 +1,6 @@
 /**
  * 
-* This class is the entry point for list-widget widget, and it is responsible for instantiation of SearchFormView.
+* This class is the entry point for list-widget
 * 
 * @class main
 * @constructor

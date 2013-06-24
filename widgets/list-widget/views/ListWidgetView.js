@@ -17,13 +17,15 @@ define(['sandbox', '../config', 'jquery', 'jquery_ui', '../model/ListWidget',
 
 			initialize : function() {
 				console.log("ListWidgetView initialize.");
+				sandbox.subscribe("Button.clicked", "widget", function (data) {
+                    alert("Handling Button.clicked : Data = " + data.hi);
+                });
 				this.render();
 			},
 
 			render : function() {
 				var self = this;
 				self.$el.html(self.template());
-
 			}
 		});
 		return ListWidgetView;

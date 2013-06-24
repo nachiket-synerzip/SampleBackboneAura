@@ -3,6 +3,9 @@
 define(['aura_perms'], function (permissions) {
 
     permissions.extend({
+    	widget: {
+            "Button.clicked": true
+        }
     });
 
     return permissions;
